@@ -12,6 +12,7 @@ WORKDIR ${WORKDIR_BASE}
 
 RUN apt install -y \
     git \
+    tree \
     make \
     libtool \
     pkg-config \
@@ -20,30 +21,6 @@ RUN apt install -y \
     libclang-dev \
     bison \
     byacc
-
-
-
-# https://github.com/phaag/nfdump/issues/202
-# RUN apt install \
-#     flex \
-#     rrdtool \
-#     librrd-dev \
-#     libpcap-dev \
-#     libtool \
-#     m4 \
-#     automake \
-#     autogen \
-#     build-essential \
-#     libjson-c-dev \
-#     pkg-config \
-#     libbz2-dev \
-#     bison \
-#     doxygen \
-#     graphviz
-
-
-RUN gcc --version
-
 
 
 # Install nfdump
